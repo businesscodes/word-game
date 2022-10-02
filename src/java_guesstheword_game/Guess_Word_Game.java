@@ -42,7 +42,7 @@ public class Guess_Word_Game extends javax.swing.JFrame {
     public void displayWord()
     {
         // default text
-        if(index == -1)
+        if(index == 0)
         {
             jLabel_Word.setText("--Word--");
             jTextField_Guess.setText("--Guess--");
@@ -80,7 +80,7 @@ public class Guess_Word_Game extends javax.swing.JFrame {
             jLabel_Result.setText("Wrong");
             jLabel_Result.setBackground(Color.red);
         }
-        // if it's the last word in the list
+        
         if(index == words.length - 1)
         {
             jButton_Next_.setEnabled(false);
