@@ -42,7 +42,8 @@ public class Guess_Word_Game extends javax.swing.JFrame {
     public void displayWord()
     {
         // default text
-        if(index == 0)
+        if(index == -1)
+            // changed from 0 to -1, now it will accept all words from the starting
         {
             jLabel_Word.setText("--Word--");
             jTextField_Guess.setText("--Guess--");
