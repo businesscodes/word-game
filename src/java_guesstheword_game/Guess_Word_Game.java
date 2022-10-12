@@ -76,10 +76,10 @@ public class Guess_Word_Game extends javax.swing.JFrame {
             jLabel_Result.setBackground(Color.green);
         }
         // if not
-        else
+        if
         {
             jLabel_Result.setText("Wrong");
-            jLabel_Result.setBackground(Color.red);
+            
         }
         
         if(index == words.length - 1)
